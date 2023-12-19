@@ -4,6 +4,7 @@ Description
 Développé selon le principe  du "mobile first", Oh My Food est une plateforme web innovante répertoriant les menus de restaurants gastronomiques à Paris. Les client peuvent y consulter les différents menus et  composer leur repas à l'avance afin d'écourter l'attente sur place.
 
 Maquettes et Prototype
+
 Les maquettes mobile et desktop du site, ainsi que le prototype complet, sont disponibles sur Figma et vous permettront d'avoir une compréhension visuelle du projet.
 
 Technologies Utilisées
