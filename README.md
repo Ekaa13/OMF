@@ -1,7 +1,7 @@
 OhMyFood - Version 1.0
 Description
 
-Développé selon le principe  du "mobile first", Oh My Food est une plateforme web innovante répertoriant les menus de restaurants gastronomiques à Paris. Les client peuvent y consulter les différents menus et  composer leur repas à l'avance afin d'écourter l'attente sur place.
+Développée selon le principe  du "mobile first", Oh My Food est une plateforme web innovante répertoriant les menus de restaurants gastronomiques à Paris. Les client peuvent y consulter les différents menus et  composer leur repas à l'avance afin d'écourter l'attente sur place.
 
 Maquettes et Prototype
 
