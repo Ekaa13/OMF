@@ -22,6 +22,7 @@ label {
   color: transparent;
   background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
+          background-clip: text;
   background-clip: text;
 }
 
@@ -37,7 +38,7 @@ label {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  animation: 0.2s linear 1s spinner-container;
+  animation: 0.2s linear 0.8s spinner-container;
   animation-fill-mode: forwards;
 }
 
@@ -56,14 +57,14 @@ label {
   height: 100px;
   position: relative;
   transform-style: preserve-3d;
-  animation: rotate 1.5s linear infinite;
+  animation: rotate 1s linear infinite;
   border: 2px solid #99E2D0;
   box-shadow: 0 0 10px rgba(153, 226, 208, 0.5);
   border-radius: 50%;
 }
 
-.spinner:before,
-.spinner:after {
+.spinner::before,
+.spinner::after {
   content: "";
   position: absolute;
   top: 0;
@@ -73,14 +74,14 @@ label {
   background-color: #99E2D0;
   border-radius: 50%;
   transform-origin: center center;
-  animation: expand 1s ease-in-out infinite alternate;
+  animation: expand 0.8s ease-in-out infinite alternate;
 }
 
-.spinner:before {
+.spinner::before {
   transform: translateZ(-50px);
 }
 
-.spinner:after {
+.spinner::after {
   transform: translateZ(50px);
 }
 
@@ -152,45 +153,26 @@ input {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: fav 1s 1;
+  animation: fav 0.6s 1;
 }
 
 @keyframes fav {
   0% {
     transform: scale(1);
   }
-  10% {
-    transform: scale(1.25);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  }
   20% {
-    transform: scale(1.5);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  }
-  30% {
     transform: scale(1.4);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
   40% {
-    transform: scale(1.5);
+    transform: scale(1.25);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  }
-  50% {
-    transform: scale(1.4);
   }
   60% {
-    transform: scale(1.5);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  }
-  70% {
     transform: scale(1.4);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
   80% {
-    transform: scale(1.5);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  }
-  90% {
     transform: scale(1.25);
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
@@ -198,7 +180,6 @@ input {
     transform: scale(1);
   }
 }
-
 /*
   1. Use a more-intuitive box-sizing model.
 */

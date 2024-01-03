@@ -28,7 +28,7 @@ label {
 .footer-txt:hover {
   color: transparent; 
   background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text; 
+  background-clip: text; 
   background-clip: text;
 }
 
@@ -83,8 +83,8 @@ label {
       border-radius: 50%;
   }
 
-  .spinner:before,
-  .spinner:after {
+  .spinner::before,
+  .spinner::after {
     content: '';
     position: absolute;
     top: 0;
@@ -97,11 +97,11 @@ label {
     animation: expand 0.8s ease-in-out infinite alternate;
   }
 
-  .spinner:before {
+  .spinner::before {
     transform: translateZ(-50px);
   }
 
-  .spinner:after {
+  .spinner::after {
     transform: translateZ(50px);
   }
   
@@ -163,52 +163,29 @@ input {
   animation-fill-mode: forwards;
   }
   
+  //Heart filled animation
   .favorite-selected { 
     @include favorite-selected;
-    animation: fav 1s 1;
+    animation: fav 0.6s 1;
     }
-    
-  .favorite-selected { 
-    @include favorite-selected;
-    animation: fav 1s 1;
-    }
-      
+       
     @keyframes fav {
       0% {
         transform: scale(1);
       }
-      10% {
+      20% {
+        transform: scale(1.4);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+      }
+      40% {
         transform: scale(1.25);
         animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
       }
-      20% {
-        transform: scale(1.5);
-        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-      }
-      30% {
+      60% {
         transform: scale(1.4);
         animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
         }
-      40% {
-        transform: scale(1.5);
-        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-      }
-      50% {
-        transform: scale(1.4);
-      }
-      60% {
-        transform: scale(1.5);
-        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-      }
-      70% {
-        transform: scale(1.4);
-        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-      }
       80% {
-        transform: scale(1.5);
-        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-      }
-      90% {
         transform: scale(1.25);
         animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
       }
@@ -216,5 +193,6 @@ input {
         transform: scale(1.0);
       }
     }
+    
     
   
